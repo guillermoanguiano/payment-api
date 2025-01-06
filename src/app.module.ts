@@ -1,8 +1,7 @@
 import { Module } from '@nestjs/common';
+import { PaymentModule } from './lib/payments/infrastructure/payment.module';
 
 @Module({
-  imports: [],
-  controllers: [],
-  providers: [],
+  imports: [PaymentModule],
 })
-export class AppModule {}
+export class AppModule { }
